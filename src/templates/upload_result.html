@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ImageFlowApp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>ImageFlow App</h1>
+        <br>
+        <h3>Upload Result:</h3>
+        
+        {% if success %}
+            <p>Image uploaded successfully!</p>
+        {% else %}
+            <p>Image upload failed!</p>
+            <p>{{error}}</p>
+        {% endif %}
+
+        <a href="/">BACK</a>
+
+    </body>
+</html>
