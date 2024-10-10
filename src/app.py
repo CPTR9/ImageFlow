@@ -5,8 +5,7 @@ import os
 app = Flask(__name__)
 
 S3_BUCKET = "imageflow899"
-S3_ACCESS_KEY = "AKIAZQ3DNMSI3QYOK3M2"
-S3_SECRET_KEY = "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"
+
 S3_REGION = 'us-east-1'
 
 s3 = boto3.client('s3', aws_access_key_id=S3_ACCESS_KEY, aws_secret_access_key=S3_SECRET_KEY)
